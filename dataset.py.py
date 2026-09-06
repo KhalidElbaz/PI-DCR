@@ -7,11 +7,14 @@ class RockFractureDataset(Dataset):
     """
     Dataset for rock fracture propagation data
     
-    Args:
-        ct_images: CT scan images [n_samples, 1, H, W]
-        displacement: Displacement fields [n_samples, 2, H, W]
-        phase_field: Phase field [n_samples, 1, H, W]
-        transform: Optional transform
+Dataset Availability:
+
+Due to the large size of the datasets and the limited space in this GitHub repository. The datasets have been uploaded to Google Drive and can be accessed through the links provided below.
+
+Link 1:
+https://drive.google.com/file/d/1lJKwwnG-EYU3qx5adI1A-4MVk-7lNQMS/view?usp=sharing
+Link 2:
+https://drive.google.com/file/d/1e7IPJIIRosHwfQM_AO5cQiYZs71ToSLN/view?usp=sharing
     """
     
     def __init__(self, ct_images, displacement, phase_field, transform=None):
