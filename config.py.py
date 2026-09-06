@@ -1,7 +1,4 @@
 import torch
-
-DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
-
 # Data parameters
 IMAGE_SIZE = 1024
 BATCH_SIZE = 2
