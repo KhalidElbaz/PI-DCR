@@ -3,23 +3,6 @@ import torch
 from sklearn.metrics import mean_squared_error, r2_score
 from utils import compute_iou, compute_pixel_accuracy
 
-
-def RMSE(y, y_hat):
-    """
-    Root Mean Square Error
-    """
-    return np.sqrt(np.mean((y - y_hat) ** 2))
-
-
-def R2(y, y_hat):
-    """
-    R-squared score
-    """
-    ss_res = np.sum((y - y_hat) ** 2)
-    ss_tot = np.sum((y - np.mean(y)) ** 2)
-    return 1 - ss_res / (ss_tot + 1e-10)
-
-
 def evaluate_model(model, test_loader, device):
     """
     Comprehensive model evaluation
